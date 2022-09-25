@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style-type: none;
+      }
+
+      .wrapper {
+        width: 80%;
+        margin: 1rem auto;
+      }
+
+      button,
+      ul.li {
+        width: 80%;
+        padding: 1rem;
+        text-align: left;
+        border-radius: 5px;
+        background-color: aliceblue;
+      }
+      li {
+        margin: 2rem;
+      }
+      button:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="first">
+        <button id="btn">Бренды</button>
+        <ul id="ul">
+          <li><a href="#">Test</a></li>
+          <li><a href="#">Test</a></li>
+          <li><a href="#">Test</a></li>
+          <li><a href="#">Test</a></li>
+          <li><a href="#">Test</a></li>
+          <li><a href="#">Test</a></li>
+          <li><a href="#">Test</a></li>
+          <li><a href="#">Test</a></li>
+        </ul>
+      </div>
+
+      <div class="two">
+        <button id="btn2">Магазин</button>
+
+        <ul id="ul2">
+          <li><a href="#">Test</a></li>
+          <li><a href="#">Test</a></li>
+          <li><a href="#">Test</a></li>
+          <li><a href="#">Test</a></li>
+          <li><a href="#">Test</a></li>
+          <li><a href="#">Test</a></li>
+          <li><a href="#">Test</a></li>
+          <li><a href="#">Test</a></li>
+        </ul>
+      </div>
+      <div class="three">
+        <button id="btn3">Помошь</button>
+
+        <ul id="ul3">
+          <li><a href="#">Test</a></li>
+          <li><a href="#">Test</a></li>
+          <li><a href="#">Test</a></li>
+          <li><a href="#">Test</a></li>
+          <li><a href="#">Test</a></li>
+          <li><a href="#">Test</a></li>
+          <li><a href="#">Test</a></li>
+          <li><a href="#">Test</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      let btn = document.getElementById("btn");
+      let btn2 = document.getElementById("btn2");
+      let btn3 = document.getElementById("btn3");
+
+      function myFunction() {
+        let x = document.getElementById("ul");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+
+      function myFunction2() {
+        let x = document.getElementById("ul2");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+
+      function myFunction3() {
+        let x = document.getElementById("ul3");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+
+      btn.addEventListener("click", myFunction);
+      btn2.addEventListener("click", myFunction2);
+      btn3.addEventListener("click", myFunction3);
+    </script>
+  </body>
+</html>
