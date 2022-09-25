@@ -12,6 +12,7 @@
         box-sizing: border-box;
         text-decoration: none;
         list-style-type: none;
+        background-color:darkgrey;
       }
 
       .wrapper {
@@ -19,103 +20,71 @@
         margin: 1rem auto;
       }
 
-      button,
       ul.li {
         width: 80%;
         padding: 1rem;
         text-align: left;
         border-radius: 5px;
-        background-color: aliceblue;
+        background-color: #f2f2f2;
       }
       li {
-        margin: 2rem;
+        margin: 2rem 0;
       }
-      button:hover {
+      ul:hover {
         cursor: pointer;
       }
+      .child_wrap, ul, li, a {
+        background-color:#fff;
+      }
+      .child_wrap {
+        border-radius: 5px;
+        padding: 1rem;
+        margin: 1rem;
+      }
+
     </style>
   </head>
   <body>
     <div class="wrapper">
-      <div class="first">
-        <button id="btn">Бренды</button>
-        <ul id="ul">
-          <li><a href="#">Test</a></li>
-          <li><a href="#">Test</a></li>
-          <li><a href="#">Test</a></li>
-          <li><a href="#">Test</a></li>
-          <li><a href="#">Test</a></li>
-          <li><a href="#">Test</a></li>
-          <li><a href="#">Test</a></li>
-          <li><a href="#">Test</a></li>
+      <div class="child_wrap">
+        <ul id="ul"> Бренды
+          <li class="brand"><a href="#">Test</a></li>
+          <li class="brand"><a href="#">Test</a></li>
+          <li class="brand"><a href="#">Test</a></li>
+          <li class="brand"><a href="#">Test</a></li>
+          <li class="brand"><a href="#">Test</a></li>
+          <li class="brand"><a href="#">Test</a></li>
+          <li class="brand"><a href="#">Test</a></li>
+          <li class="brand"><a href="#">Test</a></li>
         </ul>
       </div>
 
-      <div class="two">
-        <button id="btn2">Магазин</button>
-
-        <ul id="ul2">
-          <li><a href="#">Test</a></li>
-          <li><a href="#">Test</a></li>
-          <li><a href="#">Test</a></li>
-          <li><a href="#">Test</a></li>
-          <li><a href="#">Test</a></li>
-          <li><a href="#">Test</a></li>
-          <li><a href="#">Test</a></li>
-          <li><a href="#">Test</a></li>
+      <div class="child_wrap">
+        <ul id="ul2"> Магазин
+          <li class="shop"><a href="#">Test</a></li>
+          <li class="shop"><a href="#">Test</a></li>
+          <li class="shop"><a href="#">Test</a></li>
+          <li class="shop"><a href="#">Test</a></li>
+          <li class="shop"><a href="#">Test</a></li>
+          <li class="shop"><a href="#">Test</a></li>
+          <li class="shop"><a href="#">Test</a></li>
+          <li class="shop"><a href="#">Test</a></li>
         </ul>
       </div>
-      <div class="three">
-        <button id="btn3">Помошь</button>
-
-        <ul id="ul3">
-          <li><a href="#">Test</a></li>
-          <li><a href="#">Test</a></li>
-          <li><a href="#">Test</a></li>
-          <li><a href="#">Test</a></li>
-          <li><a href="#">Test</a></li>
-          <li><a href="#">Test</a></li>
-          <li><a href="#">Test</a></li>
-          <li><a href="#">Test</a></li>
+      <div class="child_wrap">
+        <ul id="ul3"> Помощь
+          <li class="help"><a href="#">Test</a></li>
+          <li class="help"><a href="#">Test</a></li>
+          <li class="help"><a href="#">Test</a></li>
+          <li class="help"><a href="#">Test</a></li>
+          <li class="help"><a href="#">Test</a></li>
+          <li class="help"><a href="#">Test</a></li>
+          <li class="help"><a href="#">Test</a></li>
+          <li class="help"><a href="#">Test</a></li>
         </ul>
       </div>
     </div>
 
-    <script>
-      let btn = document.getElementById("btn");
-      let btn2 = document.getElementById("btn2");
-      let btn3 = document.getElementById("btn3");
-
-      function myFunction() {
-        let x = document.getElementById("ul");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }
-
-      function myFunction2() {
-        let x = document.getElementById("ul2");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }
-
-      function myFunction3() {
-        let x = document.getElementById("ul3");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }
-
-      btn.addEventListener("click", myFunction);
-      btn2.addEventListener("click", myFunction2);
-      btn3.addEventListener("click", myFunction3);
-    </script>
+<script src="app.js"></script>
   </body>
 </html>
